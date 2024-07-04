@@ -1,0 +1,200 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    background: rgba(94, 94, 94, 1);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Assistant class */
+.text-center {
+    text-align: center;
+}
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button reset style */
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Page */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Section */
+.section {
+    padding: 60px 0;
+}
+
+/* Сhecklist */
+.checklist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checklist__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 743px;
+    height: auto;
+    border-radius: 10px;
+    background: rgba(53, 121, 245, 1);
+    padding: 0 18px 0 22px;
+}
+.checklist__circle-task {
+    position: relative;
+    display: flex;
+    margin-right: 16px;
+    padding: 29px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+.circle-task__digit {
+    position: absolute;
+    width: 32px;
+    left: 25%;
+    top: 15px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+/* Indicator */
+.circle-task__indicator {
+    position: absolute;
+    width: 6.5px;
+    height: 2.5px;
+    left: 26px;
+    top: -1.5px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.checklist__content-middle {
+    display: flex;
+    flex-direction: column;
+}
+.checklist__btn-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    width: 76px;
+    height: 18px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 40px;
+    background: rgba(35, 100, 219, 1);
+    margin-bottom: 4px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.checklist__task-success {
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 4px;
+}
+.checklist__next-action {
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.checklist__btn-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 100%;
+    max-width: 170px;
+    height: 40px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background: rgba(244, 248, 255, 1);
+    color: rgb(71, 119, 237);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) { 
+    .checklist__circle-task {
+        margin-top: 16px;
+    }
+    .checklist__btn-open {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+}
+
+
